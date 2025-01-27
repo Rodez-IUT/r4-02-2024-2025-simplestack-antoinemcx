@@ -53,7 +53,7 @@ public class SimpleStack implements Stack {
             throw new EmptyStackException();
         }
 
-        return items.getLast();
+        return items.get(getSize() - 1);
     }
 
     /**
@@ -68,6 +68,6 @@ public class SimpleStack implements Stack {
             throw new EmptyStackException();
         }
 
-        return items.removeLast();
+        return items.remove(getSize() - 1);
     }
 }
